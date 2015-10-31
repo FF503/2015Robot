@@ -31,7 +31,7 @@ public class OneButtonPreset extends CommandGroup {
     	addSequential(SetRollerCommand(Direction.IN));
     	addSequential(WaitCommand(2));
     	addSequential(SetRollerCommand(Direction.OFF));
-        addSequential(SetElevatorClawCommand(ElevatorSolenoidPosition.CLOSE));
+    	addSequential(SetElevatorClawCommand(ElevatorSolenoidPosition.CLOSE));
     	addSequential(ElevatorGoToPosition(ElevatorPosition.SECOND));    	
     }
 }
